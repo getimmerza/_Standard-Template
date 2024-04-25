@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Immerza
+  m_EditorClassIdentifier: 
+  m_GroupName: Immerza
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cbf4a2758f3407e408304e973bce24f5
+  m_SerializeEntries:
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: Assets/Scenes/Template.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ImmerzaScene
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d609e26ee378c31418faed3762591ce7
+    m_Address: Assets/URP/Standard.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ImmerzaRenderSettings
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dae721b6e84e01f4aaab570af56fe969
+    m_Address: Assets/URP/Standard_Renderer.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ImmerzaRenderer
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 31e678ec3c3d80a47bb26b00ae1ab3f2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 23b41db7c68cdd84593be9ea24722056, type: 2}
+    - {fileID: 11400000, guid: 854115fba5049c947a11af5db2c226a9, type: 2}
