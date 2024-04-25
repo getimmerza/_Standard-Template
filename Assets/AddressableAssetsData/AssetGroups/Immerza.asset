@@ -24,13 +24,13 @@ MonoBehaviour:
     - ImmerzaScene
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d609e26ee378c31418faed3762591ce7
-    m_Address: Assets/URP/Standard.asset
+    m_Address: Assets/URP/Default.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - ImmerzaRenderSettings
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dae721b6e84e01f4aaab570af56fe969
-    m_Address: Assets/URP/Standard_Renderer.asset
+    m_Address: Assets/URP/Default_Renderer.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - ImmerzaRenderer
