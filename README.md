@@ -6,12 +6,13 @@ No scene is initially opened when the project is started for the first time, so 
 This is also where you can build an application to test the performance of your scene on real hardware ("Build"-Button).<br>
 **Build Settings**
 
-![Build Settings](DocImg/BuildSettings.png)
+![Build Settings](DocImg/Startup.webp)
 
 ## Creating a scene and performance
 Ensure that your scene performs well on the Quest 2 before trying to export and uploading your work. There are certain scenarios that can heavily impact performance on a mobile VR device like the Quest 2. <br> 
 **Things to avoid:**
 
+- **<u>no custom C# scripts</u>, only use the ones already present in the project but you cannot add your own**
 - reading from the opaque and depth textures Unity provides in their shaders
 - bad topology on 3D models
 - use of transparency (especially if the blend type is set to be additive)
@@ -24,7 +25,7 @@ Also make sure that the assets used are either have a CC0 license or created by 
 Open the "Addressables Groups" tab which can be found in: <br> **"Window" -> "Asset Management" -> "Addressables" -> "Groups"**
 
 Make sure that the scene and the render settings are registered and have their corresponding tags. If you have a custom scene file and/or settings the entries should be changed accordingly:
-![Addressables Groups](DocImg/AddressablesGroups.png)
+![Addressables Groups](DocImg/ExportScene.webp)
 
 To bundle the scene into the files required for uploading it to the contributor website, go to "Build" -> "New Build" -> "Default Build Script". When asked if the new Addressables Debugger View should be used it is recommended to enable it. After the scene is built the files will be accessible from the "ServerData/Android" folder.
 
