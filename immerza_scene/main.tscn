@@ -1,0 +1,48 @@
+[gd_scene load_steps=11 format=3 uid="uid://duskisnxr5o3r"]
+
+[ext_resource type="PackedScene" uid="uid://drlutikyabr0v" path="res://immerza_scene/player.tscn" id="1_fbqc3"]
+[ext_resource type="Script" path="res://immerza_scene/cube_spin.gd" id="1_v2qub"]
+[ext_resource type="Script" path="res://addons/godot-xr-tools/objects/interactable_area.gd" id="2_3ssx1"]
+[ext_resource type="Script" path="res://immerza_scene/xr_setup.gd" id="4_4bjh5"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_t763m"]
+
+[sub_resource type="Sky" id="Sky_w1062"]
+sky_material = SubResource("ProceduralSkyMaterial_t763m")
+
+[sub_resource type="Environment" id="Environment_nrany"]
+background_mode = 2
+sky = SubResource("Sky_w1062")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ur7o"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_tfmhe"]
+material = SubResource("StandardMaterial3D_7ur7o")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h78ew"]
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_nrany")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.26725, -4.99908)
+mesh = SubResource("BoxMesh_tfmhe")
+script = ExtResource("1_v2qub")
+
+[node name="XRToolsInteractableArea" type="Area3D" parent="MeshInstance3D"]
+collision_layer = 1048576
+collision_mask = 1048576
+script = ExtResource("2_3ssx1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/XRToolsInteractableArea"]
+shape = SubResource("BoxShape3D_h78ew")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.110384, -0.939171, 0.325227, -0.588071, 0.202082, 0.783157, -0.801241, -0.277705, -0.529993, 0, 3.32663, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_fbqc3")]
+script = ExtResource("4_4bjh5")
+
+[connection signal="pointer_event" from="MeshInstance3D/XRToolsInteractableArea" to="MeshInstance3D" method="_on_xr_tools_interactable_area_pointer_event"]
