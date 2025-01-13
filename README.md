@@ -14,3 +14,4 @@ Ensure that your scene performs well on the Quest 2 before trying to export and 
 ## Exporting the scene
 - Name the scene you want to load "main.tscn"
 - export this scene with dependencies via the Godot export dialog
+![Immerza Banner](DocImg/export-dialog.png)
