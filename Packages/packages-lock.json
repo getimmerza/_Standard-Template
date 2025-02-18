@@ -5,9 +5,10 @@
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.splines": "2.7.2"
       },
-      "hash": "4584cbc44e75fb6ff719dd09bdf614b9bf1522ea"
+      "hash": "b016c57735b0a02698535e79e357d7fa16278c2c"
     },
     "com.unity.ai.navigation": {
       "version": "2.0.5",
@@ -167,6 +168,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.settings-manager": {
+      "version": "2.0.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.shadergraph": {
       "version": "17.0.3",
       "depth": 1,
@@ -175,6 +183,16 @@
         "com.unity.render-pipelines.core": "17.0.3",
         "com.unity.searcher": "4.9.2"
       }
+    },
+    "com.unity.splines": {
+      "version": "2.7.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.settings-manager": "1.0.3"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
       "version": "1.4.5",
