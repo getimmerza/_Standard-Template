@@ -1,15 +1,5 @@
 {
   "dependencies": {
-    "com.actimi.immerzasdk": {
-      "version": "https://github.com/Actimi/immerza-sdk-package.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1",
-        "com.unity.splines": "2.7.2"
-      },
-      "hash": "b016c57735b0a02698535e79e357d7fa16278c2c"
-    },
     "com.unity.ai.navigation": {
       "version": "2.0.5",
       "depth": 0,
@@ -111,13 +101,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.nuget.newtonsoft-json": {
-      "version": "3.2.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.render-pipelines.core": {
       "version": "17.0.3",
       "depth": 1,
@@ -170,7 +153,7 @@
     },
     "com.unity.settings-manager": {
       "version": "2.0.1",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -186,7 +169,7 @@
     },
     "com.unity.splines": {
       "version": "2.7.2",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
